@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números com Js</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        button, div{
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com números</h1>
+    <button id="botao" onclick="send()">Clique para Calcular</button>
+    <div id="res">O resultado vem aqui...</div>
+    <script>
+        alert('Seja Bem vindo!')
+        function send(){
+            let txtnum = prompt('Digite um número:')
+            let num = Number(txtnum)
+            let dobro = num * 2
+            let met = num / 2
+            const res = document.getElementById('res')
+            res.innerText = `O dobro de ${num} é ${dobro} e sua metade é ${met}`
+        }
+    </script>
+</body>
+</html>

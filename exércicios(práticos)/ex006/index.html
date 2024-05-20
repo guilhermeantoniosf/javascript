@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números com Js</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        button, div{
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando Números</h1>
+    <button id="botao" onclick="send()">Clique para Calcular</button>
+    <div id="res">O resultado vem aqui...</div>
+    <script>
+        function send(){
+            let num1 = Number(prompt('Digite um número'))
+            let num2 = Number(prompt('Digite mais um número'))
+            let soma = num1 + num2
+            const res = document.getElementById('res')
+            res.innerText = `A soma entre ${num1} e ${num2} é igual a ${soma}` 
+        }
+    </script>
+</body>
+</html>
