@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numeros com Js</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        button{
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vários calculos em JS</h1>
+    <button id="botao" onclick="send()">Calcular a Média</button> 
+    <div id="res"><p>O resultado vem aqui...</p></div>
+
+    <script>
+        function send(){
+            let num = Number(prompt('Digite um número:'))
+            let resultado = document.getElementById('res')
+            let pont1 = num ** 2
+            let pont2 = num ** 3
+
+            resultado.innerHTML = (`<p>O número a ser analisado será o <strong>${num}</strong></p>`)
+            resultado.innerHTML += (`<p>Seu valor absoluto é ${Math.abs(num)}</p>`)
+            resultado.innerHTML += (`<p>Seu valor inteiro é ${Math.trunc(num)}</p>`)
+            resultado.innerHTML += (`<p>Seu valor inteiro aproximado é ${Math.round(num)}</p>`)
+            resultado.innerHTML += (`<p>A raiz quadrada é aproximadamente: ${Math.sqrt(num)}</p>`)
+            resultado.innerHTML += (`<p>A raiz cúbica é aproximadamente: ${Math.cbrt(num)}</p>`)
+            resultado.innerHTML += (`<p>A raiz cúbica é aproximadamente: ${num}² é ${pont1} </p>`)
+            resultado.innerHTML += (`<p>A raiz cúbica é aproximadamente: ${num}³ é ${pont2} </p>`)
+
+        }
+    </script>
+</body>
+</html>
