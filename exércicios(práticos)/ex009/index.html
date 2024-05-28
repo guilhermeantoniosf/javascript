@@ -3,26 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Numeros com Js</title>
+    <title>Contador de Ciques</title>
     <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        button{
-            padding: 20px;
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
     </style>
 </head>
 <body>
-    <h1>Contador de Cliques</h1>
-    <button id="botao" onclick="send()">Calcular a Média</button> 
-    <button id="botao" onclick="zerar()">Zerar o Contador</button> 
-    <div id="res"><p>O contador está com <mark>0</mark> cliques</p></div>
-
-    <script>
-        function send(){
-            let click = document.getElementById('')
-        }
-    </script>
+    <main>
+        <h1>Contador de Cliques</h1>
+        <button onclick="contar()">Adicionar</button>
+        <button onclick="zerar()">Zerar</button>
+        <section id="result">
+            <p>Você clicou 0 vezes</p>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
 </body>
 </html>
